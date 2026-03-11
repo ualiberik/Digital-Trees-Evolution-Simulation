@@ -1,8 +1,8 @@
 # Digital Trees Evolution Simulation
 ## Introduction
-**This project was inspired by foo52's (Simulife Hub — his english chanell) [video](https://youtu.be/IL1HogOu5B0) and takes .**
+**This project was inspired by foo52's (Simulife Hub — his english channel) [video](https://youtu.be/IL1HogOu5B0) and takes most of the rules from it.**
 "Digital Trees Evolution Simulation" project is the 3D simulation of natural selection and evolution that shows how organisms can develop and become more complex through time. Simulation can visualize how multicellular "trees", fighting for a place in the sun, can find the most effective solutions.
-Trees pass on the genome by inheritance. However, it can slightly change randomly, laucnhing changes in population and natural selection.
+Trees pass on the genome by inheritance. However, it can slightly change randomly, launching changes in population and natural selection.
 ## How does simulation work?
 All simulation's active objects are divided into two levels: trees and cells. One tree consists of large amount of cells and cells make up the tree. The cells occupy clear positions in space and fill the 3D grid.
 ### Trees
@@ -17,9 +17,11 @@ Leaf cells function — produce energy for tree "by photosynthesis". How much en
 All stem cells become seeds when tree dies of old age. Seeds store genetic information and each seed slightly changes it in start of its life. Seeds fall constantly and become stem cells when touch the ground.
 ### Genome
 Genome is two-dimensional array, where 16 rows are genes and 6 columns are genes' parameters. Each gene store 6 integer values — active genes of new stem cells (because the cube has 6 faces and there are 6 sides to spawn new stem cell). If value is larger than 16, new stem cell doesn't spawn in the corresponding side.
-### "Laws of lightning"
+### "Laws of lighting"
 The higher (by y position) the leaf cell is, the more light and energy it receives. The amount of light received is also affected by the number of other cells above the considered leaf cell.
 Thus, received energy is determined by formula:
-``` tree.energy += (rank * (position.y + 3)) * simulation.lightAmount;
-simulation.lightAmount — general coefficient of "light amount" and 3 is smoothing coefficient.
-
+tree.energy += (rank * (position.y + 3)) * simulation.lightAmount;
+*simulation.lightAmount — general coefficient of "light amount" and 3 is smoothing coefficient.*
+## How to play the simulation?
+You can choose the number of simulation steps by adjusting its length. "No Life" text means that the initial random genomes turned out to be unsuccessful and life could not gain a foothold. To visualize the simulation click the "Watch" button.
+During visualization you can control speed of the simulation and rewind time to the desired step.
