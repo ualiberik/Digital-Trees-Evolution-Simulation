@@ -5,6 +5,8 @@ Trees pass on the genome by inheritance. However, it can slightly change randoml
 
 
 <img width="800" height="313" alt="ezgif-8d3703c446b63e5c" src="https://github.com/user-attachments/assets/8109be94-76cd-4cd7-b99d-42bc7b7c698f" />
+
+
 ## Author & Credit
 **Credit:** concept and core rules adapted from foo52 (Simulife Hub) — see [video](https://youtu.be/IL1HogOu5B0).
 **My contribution:** the full 3D implementation and all code in this repository are my own.
