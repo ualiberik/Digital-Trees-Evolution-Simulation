@@ -1,10 +1,10 @@
 # Digital Trees Evolution Simulation
 ## Introduction
-> **Credit:** The concept and core simulation rules are adapted from **foo52** ([Simulife Hub](https://youtu.be/IL1HogOu5B0), his English channel). The 3D implementation and all code in this repository are my own.
-
 "Digital Trees Evolution Simulation" project is the 3D simulation of natural selection and evolution that shows how organisms can develop and become more complex through time. Simulation can visualize how multicellular "trees", fighting for a place in the sun, can find the most effective solutions.
-
 Trees pass on the genome by inheritance. However, it can slightly change randomly, launching changes in population and natural selection.
+## Author & Credit
+**Credit:** concept and core rules adapted from foo52 (Simulife Hub) — see [video]. 
+**My contribution:** the full 3D implementation and all code in this repository are my own.
 ## How does simulation work?
 All simulation's active objects are divided into two levels: trees and cells. One tree consists of large amount of cells and cells make up the tree. The cells occupy clear positions in space and fill the 3D grid.
 ### Trees
